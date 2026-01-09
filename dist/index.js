@@ -1,9 +1,0 @@
-"use strict";var q=function(a,r){return function(){return r||a((r={exports:{}}).exports,r),r.exports}};var y=q(function(J,h){
-var O=require('@stdlib/ndarray-shape/dist');function S(a,r){var e;for(e=0;e<r.length;e++)a[e]=r[e]-a[e]-1;return a}function X(a,r,e){var i=O(a);return l;function l(t,s){return r.call(e,t,S(s,i),a)}}h.exports=X
-});var T=q(function(K,E){
-var o=require('@stdlib/assert-is-function/dist'),I=require('@stdlib/assert-is-ndarray-like/dist'),k=require('@stdlib/ndarray-base-reverse/dist'),d=require('@stdlib/ndarray-find/dist'),c=require('@stdlib/error-tools-fmtprodmsg/dist'),R=y();function z(a,r,e,i){var l,t,s,v,f,n,u,m;if(t=arguments.length,!I(a))throw new TypeError(c('null5t',a));if(t<3){if(n=r,!o(n))throw new TypeError(c('null2b',n))}else if(t>3){if(s=!0,u=r,n=e,!o(n))throw new TypeError(c('null2b',n));v=i}else if(o(r))n=r,v=e;else if(o(e))s=!0,u=r,n=e;else throw new TypeError(c('null2b',e));return l=k(a,!1),m=R(a,n,v),s?f=d(l,u,m):f=d(l,m),k(f,!0)}E.exports=z
-});var p=q(function(M,j){
-var w=require('@stdlib/assert-is-function/dist'),V=require('@stdlib/assert-is-ndarray-like/dist'),C=require('@stdlib/ndarray-base-reverse/dist'),F=require('@stdlib/ndarray-find/dist').assign,g=require('@stdlib/error-tools-fmtprodmsg/dist'),A=y();function B(a,r,e,i,l){var t,s,v,f,n,u,m,b;if(v=arguments.length,!V(a))throw new TypeError(g('null5t',a));if(!V(r))throw new TypeError(g('nullHp',r));if(v<4){if(u=e,!w(u))throw new TypeError(g('null2b',u))}else if(v>4){if(f=!0,m=e,u=i,!w(u))throw new TypeError(g('null2b',u));n=l}else if(w(e))u=e,n=i;else if(w(i))f=!0,m=e,u=i;else throw new TypeError(g('null2b',i));return s=C(a,!1),t=C(r,!0),b=A(a,u,n),f?F(s,t,m,b):F(s,t,b),r}j.exports=B
-});var D=require('@stdlib/utils-define-nonenumerable-read-only-property/dist'),L=T(),G=p();D(L,"assign",G);module.exports=L;
-/** @license Apache-2.0 */
-//# sourceMappingURL=index.js.map
