@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/ndarray-find-last",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Return a new ndarray containing the last elements which pass a test implemented by a predicate function along one or more ndarray dimensions.",
   "license": "Apache-2.0",
   "author": {
@@ -93,7 +93,6 @@
     "reduce",
     "reduction"
   ],
-  "__stdlib__": {},
   "funding": {
     "type": "opencollective",
     "url": "https://opencollective.com/stdlib"
