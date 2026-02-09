@@ -48,13 +48,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import findLast from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-find-last@deno/mod.js';
+import findLast from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-find-last@v0.1.1-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { assign } from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-find-last@deno/mod.js';
+import { assign } from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-find-last@v0.1.1-deno/mod.js';
 ```
 
 #### findLast( x\[, options], predicate\[, thisArg] )
@@ -305,7 +305,7 @@ var bool = ( out === y );
 import uniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-uniform@deno/mod.js';
 var isPositive = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-positive-number' ).isPrimitive;
 import ndarray2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-array@deno/mod.js';
-import findLast from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-find-last@deno/mod.js';
+import findLast from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-find-last@v0.1.1-deno/mod.js';
 
 var x = uniform( [ 2, 4, 5 ], -10.0, 10.0, {
     'dtype': 'float64'
