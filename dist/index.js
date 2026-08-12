@@ -1,0 +1,9 @@
+"use strict";var q=function(a,e){return function(){try{return e||a((e={exports:{}}).exports,e),e.exports}catch(r){throw (e=0, r)}};};var y=q(function(J,h){
+var O=require('@stdlib/ndarray-shape/dist');function S(a,e){var r;for(r=0;r<e.length;r++)a[r]=e[r]-a[r]-1;return a}function X(a,e,r){var i=O(a);return l;function l(t,s){return e.call(r,t,S(s,i),a)}}h.exports=X
+});var T=q(function(K,E){
+var o=require('@stdlib/assert-is-function/dist'),I=require('@stdlib/assert-is-ndarray-like/dist'),k=require('@stdlib/ndarray-base-reverse/dist'),d=require('@stdlib/ndarray-find/dist'),c=require('@stdlib/error-tools-fmtprodmsg/dist'),R=y();function z(a,e,r,i){var l,t,s,v,f,n,u,m;if(t=arguments.length,!I(a))throw new TypeError(c('2nH5t',a));if(t<3){if(n=e,!o(n))throw new TypeError(c('2nH2b',n))}else if(t>3){if(s=!0,u=e,n=r,!o(n))throw new TypeError(c('2nH2b',n));v=i}else if(o(e))n=e,v=r;else if(o(r))s=!0,u=e,n=r;else throw new TypeError(c('2nH2b',r));return l=k(a,!1),m=R(a,n,v),s?f=d(l,u,m):f=d(l,m),k(f,!0)}E.exports=z
+});var p=q(function(M,j){
+var w=require('@stdlib/assert-is-function/dist'),V=require('@stdlib/assert-is-ndarray-like/dist'),C=require('@stdlib/ndarray-base-reverse/dist'),F=require('@stdlib/ndarray-find/dist').assign,g=require('@stdlib/error-tools-fmtprodmsg/dist'),A=y();function B(a,e,r,i,l){var t,s,v,f,n,u,m,b;if(v=arguments.length,!V(a))throw new TypeError(g('2nH5t',a));if(!V(e))throw new TypeError(g('2nHHp',e));if(v<4){if(u=r,!w(u))throw new TypeError(g('2nH2b',u))}else if(v>4){if(f=!0,m=r,u=i,!w(u))throw new TypeError(g('2nH2b',u));n=l}else if(w(r))u=r,n=i;else if(w(i))f=!0,m=r,u=i;else throw new TypeError(g('2nH2b',i));return s=C(a,!1),t=C(e,!0),b=A(a,u,n),f?F(s,t,m,b):F(s,t,b),e}j.exports=B
+});var D=require('@stdlib/utils-define-nonenumerable-read-only-property/dist'),L=T(),G=p();D(L,"assign",G);module.exports=L;
+/** @license Apache-2.0 */
+//# sourceMappingURL=index.js.map
